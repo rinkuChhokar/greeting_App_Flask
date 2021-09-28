@@ -6,6 +6,7 @@ gunicorn==20.1.0
 itsdangerous==2.0.1
 Jinja2==3.0.1
 MarkupSafe==2.0.1
-pypiwin32==301
+pypiwin32==223
+pywin32==301
 pyttsx3==2.90
 Werkzeug==2.0.1
