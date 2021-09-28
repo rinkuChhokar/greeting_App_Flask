@@ -1,12 +1,4 @@
-from flask import Flask, render_template, request,flash
-
-import pyttsx3
-
-def speak(text):
-    engine=pyttsx3.init()
-    engine.say(text)
-    engine.runAndWait()
-    
+from flask import Flask, render_template, request,flash   
     
 app=Flask(__name__,template_folder='templates')
 app.secret_key = 'super secret key'
@@ -26,7 +18,7 @@ def greet():
 
         flash("Hi "+str(request.form['name_input'])+", great to see you!")
         request.form['name_input']
-        speak("Hi "+str(request.form['name_input'])+", great to see you!")    
+       
    
     return render_template("index.html")
 
